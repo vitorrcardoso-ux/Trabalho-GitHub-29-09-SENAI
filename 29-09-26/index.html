@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PB-PAUTA BRASIL</title>
+
+    <!--ligação entre HTML e CSS-->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+    <body>
+
+        <header>
+
+            <img src="img/Logo1.png" alt="Logo da pagina" class="LogoPrincipal">
+
+            <nav> <!--atalhos para as seções-->
+
+                <a href="#destaques">Destaques</a>
+                <a href="#politica">Política</a>
+                <a href="#esportes">Esportes</a>
+                <a href="#outras">Outras</a>
+                <a href="#formulario">Formulário</a>
+    
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section id="destaques">
+
+                <h2>Destaques</h2>
+
+                    <div class="destaque-div">
+
+                        <img src="img/Destaque1.webp" alt="noticia destaque">
+
+                        <h3>EUA anunciam plano para exportação de etanol e veem Brasil como "incógnita"</h3>
+
+                    </div>
+
+            </section>
+
+            <section id="politica">
+
+                <h2>Política</h2>
+            
+            <div class="cards">
+
+                <div class="card">
+
+            <img src="img/noticia1.webp" alt="politica">
+
+            <h3>Milton Leite é alvo de operação contra atuação do PCC no transporte de SP</h3>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/Politica1.webp" alt="politica">
+
+            <h3>Futura: Flávio tem 48,1% no 2º turno; Lula, 43,7%</h3>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/destaque2.webp" alt="noticia destaque">
+
+            <h3>Governo nega redução de imposto do etanol como negociação a tarifas dos EUA</h3>
+
+        </div>
+
+    </div>
+
+        </div>
+
+        </section>
+
+        <section id="esportes">
+
+            <h2>Esportes</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <img src="img/esporte1.webp" alt="esportes">
+
+                    <h3>"Erro fatal": pênalti perdido por Memphis Depay repercute na Europa</h3>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/esporte2.webp" alt="esportes">
+
+                    <h3>Atlético-MG x Santos: herói nos pênaltis, Gabriel Delfim iguala ídolos</h3>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="img/esporte3.avif" alt="esportes">
+
+                    <h3>Neymar se manifesta após eliminação do Santos</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--carrosel de imagens-->
+
+        <section id="outras">
+
+            <h2>Acompanhe outras notícias</h2>
+
+            <div class="slides">
+
+                <img src="img/C1.png" alt="Destaque 1">
+
+                <img src="img/C2.png" alt="Destaque 2">
+
+                <img src="img/C3.png" alt="Destaque 3">
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <table>
+
+                <h2>Mais Lidas</h2>
+
+                <tbody>
+
+                <tr>
+                    <th>Posição</th>
+                    <th>Notícia</th>
+                    <th>Visualizações</th>
+                </tr>
+
+                <tr>   
+                    <td>1</td>
+                    <td>Plano de exportação do EUA</td>
+                    <td>15.240</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Redução de impostos</td>
+                    <td>13.560</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Operação contra o PCC</td>
+                    <td>11.890</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Disputa de Flávio e Lula</td>
+                    <td>8.987</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Pênalti perdido por Memphis</td>
+                    <td>5.878</td>
+                </tr>
+
+            </tbody>
+
+            </table>
+
+        </section>
+
+        <!--formulário de inscrição-->
+
+        <section id="formulario">
+
+            <h2>Cadastre-se para estar sempre por dentro das notícias</h2>
+
+            <form>
+
+                <label for=“nome” class="formulario"> Nome:</label>
+                <input
+                
+                type="text"
+                id="nome"
+                name=“nome”
+                placeholder="Digite seu nome"
+                required
+                >
+
+                <br><br>
+
+                <label for=“e-mail” class="formulario"> E-mail:</label>
+                <input
+                
+                type="e-mail"
+                id="e-mail"
+                name=“e-mail”
+                placeholder="Digite seu e-mail"
+                required
+                >
+
+                <br><br>
+
+                <label for=“telefone” class="formulario"> Telefone:</label>
+                <input
+                
+                type="tel"
+                id="telefone"
+                name=“telefone”
+                placeholder="Digite seu telefone"
+                required
+                >
+
+                <br><br>
+
+                <button type="submit">Finalizar inscrisão</button>
+
+            </form>
+
+        </section>
+
+        </main>
+
+        <!--Rodapé e links externos-->
+
+    <footer>
+
+        <p>© PB-PAUTA BRASIL News Network Brasil. Uma empresa NOTÍCIARIA. Todos os direitos reservados.</p>
+    
+        <!-- LINKS EXTERNOS -->
+
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/rodape1.webp" alt="Instagram">
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="img/rodape2.webp" alt="Facebook">
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: rgb(32, 32, 226);
+    background-size: contain;
+    height: 100px; 
+}
+header img {
+    width: 20%;
+    position: relative;
+    bottom: 20px;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.4em;
+    position: relative;
+    left: 1200px;
+    top: -110px;
+}
+section#destaques h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 2em;
+}
+
+.destaque-div {
+    color: #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.destaque-div img {
+    width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.destaque-div img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover; /* Garante que a imagem faça zoom ao invés de aumentar */
+}
+
+.destaque-div img {
+    transition: transform 0.3s ease-in-out; /* Adiciona a transição suave ao estado normal */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens do carrossel */
+.slides img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    animation: slideAnimation 15s infinite;
+    object-fit: cover; /* Garante que as imagens se ajustem ao container */
+}
+
+/* Animação do carrossel */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    53% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    86% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+    table {
+        width: 100%;
+        max-width: 800px;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 1em;
+        text-align: left;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    table th, table td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: rgb(32, 32, 226);
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: rgb(32, 32, 226);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(24, 24, 170);
+}
+
+h2 {
+
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(32, 32, 226);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+footer img {
+    width: 40px;
+    height: auto;
+    margin: 0 5px;
+}
